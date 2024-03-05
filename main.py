@@ -1,14 +1,25 @@
 def sumar(a, b):
     # aqui se realiza la suma de dos numeros
+    r = a + b
+    return int (r)
 
 def restar(a, b):
     # aqui se realiza la resta de dos numeros
+    r = a - b
+    return int (r)
 
 def multiplicar(a, b):
     # aqui se realiza la multiplicacion de dos numeros
-
+    r = (a * b)
+    return int (r)
+    
 def dividir(a, b):
+    if (b != 0):        
+        return a / b
+    else:
+        return "Error: No se puede dividir por cero"
     # aqui se realiza la division de dos numeros
+    
 
 def main():
     num1 = float(input("Ingrese el primer número: "))
